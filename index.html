@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>键间 · Keyboard Piano</title><link rel="stylesheet" href="style.css"></head>
+<body><main><header><a class="brand">键间 <small>KEYBOARD PIANO</small></a><span class="tag">把打字的手感，变成音乐。</span></header>
+<section class="intro"><div class="eyebrow">YOUR KEYBOARD, YOUR INSTRUMENT</div><h1>音乐，就在指间。</h1><p>让熟悉的电脑键盘，成为一架随手可弹的钢琴。</p></section>
+<section class="instrument"><div class="toolbar"><div class="tabs"><button id="mainMode" class="selected">主键盘 · 半音阶</button><button id="numMode">数字键盘 · 简谱</button></div><button id="start" class="primary">开启声音</button></div>
+<div class="settings"><label>起始音域 <select id="octave"></select></label><label>音量 <input id="volume" type="range" min="0" max="100" value="65"></label><button id="stop">全部止音 · Esc</button></div>
+<div class="readout"><span id="status" role="status">点击「开启声音」后，按键或点击琴键试奏</span><strong id="notes">—</strong></div>
+<div id="keyboard"></div><div class="piano-wrap"><div id="piano"></div></div>
+<div class="pedals"><button data-pedal="quiet"><small>CTRL</small>弱音 <span>减小音量</span></button><button data-pedal="soft"><small>FN / SHIFT</small>柔音 <span>柔化音色</span></button><button data-pedal="sustain"><small>SPACE</small>延音 <span>松键后继续共鸣</span></button></div>
+<p id="hint" class="hint"></p></section>
+<footer><span>演奏提示</span><p>支持和弦，按住发声、松开发音键止音。切换窗口会自动止音。建议切换到英文输入法。</p><p>Fn 通常由硬件处理，无法识别时请用 Shift。弱音与柔音为电子模拟；普通键盘不支持力度感应，多键同时按下的数量取决于键盘硬件。</p></footer></main><script src="app.js"></script></body></html>
